@@ -547,7 +547,7 @@ def _scroll(clicks, x=None, y=None):
     try:
         _sendMouseEvent(MOUSEEVENTF_WHEEL, x, y, dwData=clicks)
     except (PermissionError,
-            OSError):  # TODO: We need to figure out how to prevent these errors, see https://github.com/asweigart/pyautogui/issues/60
+            OSError):  # KTODO: We need to figure out how to prevent these errors, see https://github.com/asweigart/pyautogui/issues/60
         pass
 
 
